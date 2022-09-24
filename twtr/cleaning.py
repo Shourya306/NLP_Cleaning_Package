@@ -13,5 +13,13 @@ def no_punc(row):
       no_punc_list.append(letter)
   return ''.join(no_punc_list)
 
+def no_stopwords(row):
+  no_stopwords_list = []
+  '''This function returns the text column without the stopwords'''
+  split_text = row.split()
+  for word in split_text:
+    if word not in stopwords.words('english'):
+      no_stopwords_list.append(word)
+  return ' '.join(no_stopwords_list)
 
   
