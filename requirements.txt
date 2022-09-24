@@ -1,0 +1,4 @@
+nltk
+string
+numpy
+pandas
